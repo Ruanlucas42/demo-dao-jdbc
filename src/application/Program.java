@@ -17,6 +17,8 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
+		System.out.println("*** Testing the Seller class");
+		
 		System.out.println("*** TEST 1: Seller findById ***");
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
@@ -48,7 +50,7 @@ public class Program {
 		System.out.println("Enter id for delete test:");
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
-		System.out.println("Delete completed");
+		System.out.println("Delete completed");	
 		
 		sc.close();
 		
